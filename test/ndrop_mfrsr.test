@@ -1,0 +1,12 @@
+#!/bin/csh
+
+/apps/ds/bin/dsproc_test
+
+if ($status != 0) then
+    echo "***** FAILED TEST *****"
+    exit(1)
+endif
+
+echo "***** PASSED TEST *****"
+exit(0)
+
